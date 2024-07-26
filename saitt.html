@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROQUE’S PARFUN</title>
+    <style> 
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Inter:wght@100..900&display=swap');
+
+    :root{
+        --rosa: #F8ACE7;
+        --preto: #000000c4 ;
+        --cor-de-fundo:var(--preto)
+    }
+    
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .loja{
+        background-image: linear-gradient(black,#f8ace7);
+    }
+    .roque{
+        font-size: 96px;
+        color: var(--rosa);
+    font-family: "Cinzel", serif;
+      font-optical-sizing: auto;
+      font-weight: weight;
+      font-style: normal;
+      padding-left: 10%;
+    }
+    .comeso{
+        display: flex;
+        background-image: linear-gradient(black,#66666623);
+    }
+    .sacola{
+        width: 50px;
+        height: 50px;
+        padding-left: 9%;
+        padding-top: 5%;
+    }
+    .corasao{
+        width: 40px;
+        height: 40px;
+        padding-left: 5%;
+        padding-top: 5%;
+    }
+    .search-box{
+    position: absolute;
+    left: 40%;
+    background:none;
+    height: 40px;
+    padding: 10px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-txt{
+    border: 20px;
+border: var(--rosa);
+background: none;
+outline: #F8ACE7;
+color: #f0f5fb;
+font-size: 16px;
+line-height: 20px;
+width: 0;
+transition: .5s;
+font-family: "Poppins", sans-serif;
+}
+.search-btn{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+.search-box:hover > .search-txt{
+    width: 240px;
+    padding: 0 6px;
+    background: none;
+}
+::-webkit-input-placeholder{
+    color: var(--rosa);
+}
+.tudo{
+    display: flex;
+}
+.parametro{
+    background-color: var(--fundo-texto);
+    border: 2px solid var(--branco);
+    margin-top: 32px;
+    padding: 24px;
+}
+.parametro-coluna__senha{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.parametro-senha{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.parametro-senha-botoes{
+    display: flex;
+    justify-content: center;
+}
+
+.parametro-senha__botao{
+    background-color: var(--fundo-texto);
+    color: var(--branco);
+    border: 2px solid var(--branco);
+    padding: 24px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.u{
+
+    justify-content: space-around;
+    text-align: center;
+}
+.o{
+    display: flex;
+}
+.p{
+    padding-left: 5%;
+    padding-top: 5%;
+}
+.text1{
+font-size: 36px;
+font-family:"Inter", sans-serif ;
+}
+.text2{
+    padding-left: 2%;
+    font-size: 24px;
+    font-family: "Inter", sans-serif;
+}
+.text3{
+    font-size: 40px;
+    font-family: "inter", sans-serif;
+    padding-top: 10%;
+}
+.text4{
+    font-size: 20px;
+    font-family: "inter", sans-serif;
+    padding-top: 2%;
+}
+.text5{
+    padding-top: 10%;
+    font-size: 32px;
+    font-family: "Inter", sans-serif;
+}
+.text6{
+    padding-top: 5%;
+    font-size: 24px;
+    font-family: "Inter", sans-serif;
+}
+.text7{
+    padding-top: 1%;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+}
+button{
+    background-color: var(--fundo-texto);
+    color: var(--branco);
+    border: 2px solid var(--branco);
+    padding: 24px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.b{
+    display: flex;
+    padding-top: 8%;
+}
+    </style>
+</head>
+<body>
+    <section class="loja">
+    <header class="cabesa">
+<div class="comeso">
+                <h1 class="roque">ROQUE’S PARFUN</h1>
+                <img src="Sacola.svg" alt="carrinho" class="sacola">
+                <img src="Favoritos.svg" alt="compra" class="corasao">
+</div>
+<div class="tudo">
+    <img src="logo.svg" alt="logo">
+    <div class="search-box">
+        <a href="#" class="search-btn"><img src="lupa.svg" alt="lupa" height="20" width="20" class="lupa"></a>
+        <input type="text" placeholder="pesquisa..." class="search-txt"> 
+    </div>
+</div>
+         <section class="o">
+    <div class="p">
+<img src="o.svg" alt="imagem-do-olypeam-perfume" class="u">
+    </div>
+        <div class="p">
+<h1 class="text1">PACO RABANNE</h1>
+<h2 class="text2">PERFUME RABNNE OLYMPÉA FEMININO EAU DE PARFUM</h2>
+<h1 class="text3">639,90</h1>
+<h2 class="text4">OU 10X DE R$63,90</h2>
+<h1 class="text5">QUANTIDADE</h1>
+                             <div class="b">
+<div class="parametro">
+            <div class="parametro-senha-botoes">
+                <button class="parametro-senha__botao">-</button>
+                <p class="parametro-senha__texto">1</p>
+                <button class="parametro-senha__botao">+</button>
+            </div>
+</div> 
+        <button type="button"> <img src="Sacola.svg" alt="adicionar a comopra"></button>
+                             </div>
+        </div>
+         </section>
+         <h1 class="text6">DESCRIÇÃO</h1>
+         <h2 class="text7">Simplismente é uma fragrância que evoca a força e o poder da Deusa Grega Olímpia, mas, dessa vez, para os tempos moderno. Para a Deusa <br>
+            contemporânea o Olympéa EAU de Parfum é marcado pela harmonia cativante da baunilha e do sal, que entrega um aroma fresco, poderoso e sedutor. <br>
+            Com uma combinação uníca, Rabanne imaginou a fragância para elevar mulheres ao nível das Deusas do OLimpo. <br>
+            Esse perfume é capaz de transformar a mulher que o usa em uma verdadeiro ícone - irreverante, fascinante e irrisistível! </h2>
+</section> 
+</body>
+<script src="js.js"></script>
+</html>
